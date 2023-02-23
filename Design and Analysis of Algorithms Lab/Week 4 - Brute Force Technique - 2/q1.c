@@ -107,6 +107,7 @@ int main()
 			scanf("%d", &mat[i][j]);
 		}
 	}
+	
 	int count = solve(mat, num);
 	printf("The number of operations is : %d\n", count);
 	return 0;
