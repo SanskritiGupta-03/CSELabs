@@ -1,4 +1,9 @@
-AREA RESET,DATA,READONLY 
+/*Write a program to add two 128 bit numbers available in code memory and
+store the result in data memory.
+Hint: Use indexed addressing mode.*/
+	
+	
+	AREA RESET,DATA,READONLY 
 	EXPORT __Vectors 
 __Vectors 
 	DCD 0X10001000 
