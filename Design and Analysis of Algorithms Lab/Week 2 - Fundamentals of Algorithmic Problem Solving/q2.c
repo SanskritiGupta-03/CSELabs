@@ -21,7 +21,6 @@ void sievesalgo(int m, int arr[])
     }
   }
 }
-
 int primefactors(int n, int arr[], int *op)
 {
   int narr[n + 1];
