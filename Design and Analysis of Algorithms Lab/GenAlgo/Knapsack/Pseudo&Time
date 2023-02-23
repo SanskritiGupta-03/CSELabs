@@ -1,0 +1,29 @@
+Knapsack(W[0..n − 1],V[0..n-1],B)
+
+//Determine the Knapsack for a capacity B
+//Input: An array W[0..n − 1] of weights, V[0..n − 1] of values, capacity B
+//Output: An array K[0..m-1] of Knapsack items
+
+
+maxVal ← 0
+while there is a unique bit array of size n
+begin
+  0 in the bit array at position i implies element v i is absent in Knapsack
+  1 in the bit array at position i implies element v i is present in Knapsack
+  Add all the weights corresponding to 1 in the bit array
+  if total weight < B then
+    Add all the Values corresponding to 1 in the bit array
+    if total value > maxVal then
+      maxVal ← total value
+    end if
+  end if
+end while
+
+Time Complexity :
+The basic operation in this is comparison inside loop. This is repeated as many times
+as the iterations of the loop. The loop is repeated 2 n times.
+Hence, C(n)= θ(2 n )
+This can be observed by repeating the experiment for knapsack problems with number
+of items as 3, 4, 5, 10, 20..... by randomly generating the weight set and the profit set.
+A plot of number of items, n, vs opcount (opcount is shown in the sample code) gives
+an exponential curve.
