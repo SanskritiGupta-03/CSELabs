@@ -1,0 +1,22 @@
+ALGORITHM SelectionSort(A[0..n − 1])
+Sorts //Sorts a given array by selection sort
+//Input: An array A[0..n − 1] of orderable elements
+//Output: Array A[0..n − 1] sorted in nondecreasing order
+
+
+for i ←0 to n − 2 do
+  min←i
+  for j ←i + 1 to n − 1 do
+    if A[j ]<A[min]
+       min←j
+    end if
+  end for
+  swap A[i] and A[min]
+end for
+
+
+Time Complexity:
+= θ(n^2 )
+This can be observed by repeating the experiment with the worst case inputs for
+different array sizes say 10, 15, 20, 35, 100. A plot of number of elements in the array
+vs opcount (opcount is shown in the sample code) gives a quadratic curve.
