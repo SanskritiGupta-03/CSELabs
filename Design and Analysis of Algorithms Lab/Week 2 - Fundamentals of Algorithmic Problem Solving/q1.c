@@ -12,5 +12,6 @@ void main() {
             break;
         }
     }
+    
     printf("GCD of %d and %d is %d\nOpcount is: %d\n", n1, n2, gcd, opCount);
 }
